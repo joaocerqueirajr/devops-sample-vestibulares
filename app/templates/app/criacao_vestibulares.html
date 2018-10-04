@@ -6,8 +6,8 @@
     <h1>Criacao de Vestibulares</h1>
 </div>
 
-<table class="table" style="align:center;">
-    <tr><th>Nome do curso</th><th> Data</th><th>Local da prova</th></tr>
+<table class="table">
+    <tr style="align:center;"><th>Nome do curso</th><th> Data</th><th>Local da prova</th></tr>
         {% for curso in cursos2 %}
           <tr><td>{{ curso }}</td><td>{{ dia }}/{{ mes }}/{{ ano }}</td><td>Faculdade Impacta</td></tr>
         {% endfor %}
