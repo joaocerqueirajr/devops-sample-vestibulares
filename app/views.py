@@ -56,7 +56,7 @@ def cadastro_cursos(request):
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de cursos',
-            'cursos': ['ADS' , 'SI', 'CC'],
+            'cursos': ['ABC' , 'SI', 'CC'],
             'year':datetime.now().year,
         })
 
