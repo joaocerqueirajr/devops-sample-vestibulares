@@ -60,7 +60,7 @@ def cadastro_cursos(request):
             'year':datetime.now().year,
         })
         
-def criacao_vestibulares(request):
+'''def criacao_vestibulares(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
@@ -70,6 +70,6 @@ def criacao_vestibulares(request):
             'title':'Cadastro de cursos',
             'cursos': ['ADS' , 'SI', 'ADM'],
             'year':datetime.now().year,
-        })
+        })'''
     )
 
