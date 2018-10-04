@@ -71,7 +71,7 @@ def criacao_vestibulares(request):
         {
             'title':'Criacao de Vestibulares',
             'cursos2': ['ADS' , 'Sistemas de Informacao', 'Administracao'],
-            'year':datetime.now().year,    
+            'date':datetime.now(),    
         })
 
     )
