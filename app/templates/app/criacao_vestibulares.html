@@ -7,10 +7,11 @@
 </div>
 
 <table class="table">
-    <tr><th>Nome do curso</th><th>Período</th><th>Faculdade</th></tr>
+    <tr><th>Nome do curso</th><th>Data</th><th>Local da prova</th></tr>
         {% for curso in cursos2 %}
-          <tr><td>{{ curso }}</td><td>Noturno</td><td>Faculdade Impacta</td></tr>
+          <tr><td>{{ curso }}</td><td>{{ year }}</td><td>Faculdade Impacta</td></tr>
         {% endfor %}
+    
 </table>
 
 {% endblock %}
