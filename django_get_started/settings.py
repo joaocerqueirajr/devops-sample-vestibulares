@@ -3,6 +3,11 @@ Django settings for django_get_started project.
 """
 
 from os import path
+import os
+mysqlconnstr = os.environ['MYSQLCONNSTR_localdb']
+mysqlconnlst = mysqlconnstr.split(';')
+mysqlconndict = dict(s.split('=',1) for s in mysqlconnlst)
+
 PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
 
 DEBUG = True
@@ -18,12 +23,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': path.join(PROJECT_ROOT, 'db.sqlite3'),
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': mysqlconndict['Database'],
+        'USER': mysqlconndict['User Id'],
+        'PASSWORD': mysqlconndict['Password'],
+        'HOST': mysqlconndict['Data Source'].split(':')[0],
+        'PORT': mysqlconndict['Data Source'].split(':')[1],
     }
 }
 
