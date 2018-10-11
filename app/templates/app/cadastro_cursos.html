@@ -9,7 +9,7 @@
 <table class="table">
     <tr><th>Nome do curso</th><th>Período</th><th>Faculdade</th></tr>
         {% for curso in cursos %}
-          <tr><td>{{ curso }}</td><td>Noturno</td><td>Faculdade Impacta</td></tr>
+          <tr><td>{{ curso.nome }}</td><td>{{ curso.periodo }}</td><td>{{ curso.instituicao }}</td></tr>
         {% endfor %}
 </table>
 
