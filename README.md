@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 services: app-service\web, app-service
 platforms: python
@@ -19,6 +18,3 @@ To learn how to deploy this starter web app to App Service in a few minutes, go 
 ## License
 
 See [LICENSE](LICENSE).
-=======
-# devops-sample-vestibulares
->>>>>>> 30c3f54d6f400bba6b9472c24a89e3672473ce62
